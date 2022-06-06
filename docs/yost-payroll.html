@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="site.css">
+    <title>WEB 231 – Enterprise JavaScript I</title>
+  </head>
+  <body>
+
+    <h1 id="payroll-header">Payroll System</h1>
+    <h3>Employee record 1</h3>
+    <ul>
+      <li id="txtFirstNameLudgwig"></li>
+      <li id="txtLastNameBeethoven"></li>
+      <li id="txtAddressLudgwig"></li>
+      <li id="txtHireDateLudwig"></li>
+      <li id="txtPayRateLudwig"></li>
+    </ul>
+    <script>
+      document.getElementById("txtFirstNameLudgwig").innerHTML = "Ludwig";
+      </script>
+      <script>
+        document.getElementById("txtLastNameBeethoven").innerHTML = "Beethoven";
+        </script>
+        <script>
+          document.getElementById("txtAddressLudgwig").innerHTML = "505 main Street";
+          </script>
+          <script>
+            const date= new Date();
+            let text = date.toLocaleDateString();
+            document.getElementById("txtHireDateLudwig").innerHTML = "12/9/2020";
+            </script>
+            <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tolocaledatestring-->
+            <script>
+              let num = 18.9;
+              let n = num.toFixed(1);
+              document.getElementById("txtPayRateLudwig").innerHTML = n;
+              </script>
+            <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tofixed-->
+    <h3>Employee record 2</h3>
+      <ul>
+        <li id="txtFirstNameJohann"></li>
+        <li id="txtLastNameBach"></li>
+        <li id="txtAddressJohann"></li>
+        <li id="txtHireDateJohann"></li>
+        <li id="txtPayRateJohann"></li>
+      </ul>
+      <script>
+        document.getElementById("txtFirstNameJohann").innerHTML = "Johann";
+        </script>
+        <script>
+          document.getElementById("txtLastNameBach").innerHTML = "Bach";
+          </script>
+          <script>
+            document.getElementById("txtAddressJohann").innerHTML = "512 main Street";
+            </script>
+            <script>
+              const date1= new Date();
+              let text1 = date1.toLocaleDateString();
+              document.getElementById("txtHireDateJohann").innerHTML = "12/9/2020";
+              </script>
+              <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tolocaledatestring-->
+              <script>
+                let num1 = 25.5;
+                let n1 = num1.toFixed(1);
+                document.getElementById("txtPayRateJohann").innerHTML = n1;
+                </script>
+              <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tofixed-->
+    <h3>Employee record 3</h3>
+    <ul>
+        <li id="txtFirstNameWolfgang"></li>
+        <li id="txtLastNameMozart"></li>
+        <li id="txtAddressWolfgang"></li>
+        <li id="txtHireDateWolfgang"></li>
+        <li id="txtPayRateWolfgang"></li>
+      </ul>
+      <script>
+        document.getElementById("txtFirstNameWolfgang").innerHTML = "Wolfgang";
+        </script>
+        <script>
+          document.getElementById("txtLastNameMozart").innerHTML = "Mozart";
+          </script>
+          <script>
+            document.getElementById("txtAddressWolfgang").innerHTML = "600 main Street";
+            </script>
+            <script>
+              const date2= new Date();
+              let text2 = date2.toLocaleDateString();
+              document.getElementById("txtHireDateWolfgang").innerHTML = "12/9/2020";
+              </script>
+              <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tolocaledatestring-->
+              <script>
+                let num2 = 50.1;
+                let n2 = num2.toFixed(1);
+                document.getElementById("txtPayRateWolfgang").innerHTML = n2;
+                </script>
+              <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_tofixed-->
+      <a class="return-home" href="https://justinlyost.github.io/Web-231/">Return</a>
+
+  </body>
+</html>
