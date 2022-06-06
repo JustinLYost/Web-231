@@ -29,3 +29,16 @@ a:hover{
 a:visited{
   color: #3C275A;
 }
+
+.return-home.link{
+   text-decoration: none;
+   color: #4F3674
+}
+
+.return-home.hover{
+ color: #4F3674;
+}
+
+.return-home.visited{
+ color: #3C275A;
+}
