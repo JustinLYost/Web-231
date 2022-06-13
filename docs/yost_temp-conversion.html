@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <title>WEB 231 – Enterprise JavaScript I</title>
+</head>
+
+<body>
+  <h1 id="h1Conversion">Welcome to the Temperature Conversion App!</h1>
+  <div class="card">
+
+    <div class="container">
+      <h2 id="h2Conversion">Fahrenheit to Clesius Converter</h2>
+      <label for="txtFahrenheit">Fahrenheit Value:</label>
+      <input id="txtFahrenheit" type="text" name="text" value="">
+
+      <div class="control">
+        <button id="btnConversion" onclick="clickFunction()">Convert Temperature</button>
+      </div>
+    </div>
+  </div>
+  <div class="cardResult">
+
+    <div class="containerResult">
+      <h2 id="h2Conversion">Conversion Results</h2>
+      <script type="text/javascript">
+        function clickFunction() {
+          var x = document.getElementById("txtFahrenheit").value;
+          var b = x - 32;
+          var c = (b / 1.8).toFixed(2);
+          document.getElementById("cel").innerHTML = c;
+        }
+      </script>
+
+      <p id="cel"></p>
+    </div>
+  </div>
+  <a id="returnConversion" class="return-home" href="https://justinlyost.github.io/Web-231/">Return</a>
+</body>
+
+</html>
