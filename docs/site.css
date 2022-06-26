@@ -143,3 +143,50 @@ a:visited {
 #rndcel {
   font-size: 28px;
 }
+
+/* Sequence Number Game */
+#h1sg{
+  text-align: center;
+  background: none;
+  color: #4F3674;
+  border-style: none;
+  font-size: 28px;
+}
+
+#h2Conversion{
+  background: none;
+  color: #4F3674;
+  border-style: none;
+}
+
+#btnDisplaySequence{
+  background-color: #4F3674;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 180px;
+  height: 30px;
+  margin: 6px 6px 6px 6px;
+}
+
+#btnDisplaySequence:hover{
+  background-color: #D6A800;
+  color: white;
+}
+
+#sqh2{
+  background: none;
+  color: #4F3674;
+  border-style: none;
+}
+#result{
+  font-size: 28px;
+}
+
+#txtsg{
+  font-size: 18px;
+}
+
+#txtsglabel{
+  font-size: 18px;
+}
