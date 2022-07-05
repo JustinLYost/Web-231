@@ -145,7 +145,7 @@ a:visited {
 }
 
 /* Sequence Number Game */
-#h1sg{
+#h1sg {
   text-align: center;
   background: none;
   color: #4F3674;
@@ -153,13 +153,13 @@ a:visited {
   font-size: 28px;
 }
 
-#h2Conversion{
+#h2Conversion {
   background: none;
   color: #4F3674;
   border-style: none;
 }
 
-#btnDisplaySequence{
+#btnDisplaySequence {
   background-color: #4F3674;
   color: white;
   font-size: 16px;
@@ -169,24 +169,95 @@ a:visited {
   margin: 6px 6px 6px 6px;
 }
 
-#btnDisplaySequence:hover{
+#btnDisplaySequence:hover {
   background-color: #D6A800;
   color: white;
 }
 
-#sqh2{
+#sqh2 {
   background: none;
   color: #4F3674;
   border-style: none;
 }
-#result{
+
+#result {
   font-size: 28px;
 }
 
-#txtsg{
+#txtsg {
   font-size: 18px;
 }
 
-#txtsglabel{
+#txtsglabel {
   font-size: 18px;
+}
+
+/* Start of In-N-Out-Books */
+table {
+  text-align: left;
+  margin-bottom: 30px;
+  border-style: solid;
+  width: 100%;
+}
+
+tr:hover {
+  background: #D6A800;
+  color: #4F3674;
+}
+
+th {
+  background: #4f3674;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 25%;
+}
+
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#h2A {
+  background: none;
+  color: #4F3674;
+  border-style: none;
+}
+
+#h2B {
+  background: none;
+  color: #4F3674;
+  border-style: none;
+}
+
+#booksh2 {
+  background: none;
+  color: #4F3674;
+  border-style: none;
+}
+
+#booksh1 {
+  background: none;
+  color: black;
+  border-style: none;
+}
+
+#app-header {
+  text-align: center;
+  width: 100%;
+}
+
+#btnDisplayListing {
+  background-color: #4F3674;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 180px;
+  height: 30px;
+  margin: 6px 6px 6px 6px;
+}
+
+#btnDisplayListing:hover {
+  background-color: #D6A800;
+  color: white;
 }
