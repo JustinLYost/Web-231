@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Cache Control -->
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <!-- UTF -->
+  <meta charset="utf-8">
+  <!-- Style Sheet Link -->
+  <link rel="stylesheet" href="site.css">
+  <!-- Google Font Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <title>WEB 231 – Enterprise JavaScript I</title>
+</head>
+
+<body>
+  <div class="top-container" id="app-header">
+  <h1 id="booksh1" class="app-header">Welcome to In-N-Out-Books</h1>
+  </div>
+  <!-- Upper Card -->
+  <div class="card">
+    <div class="container">
+      <h2 id="booksh2">My Favorites</h2>
+      <!-- https://www.w3schools.com/tags/tag_select.asp -->
+      <!-- Drop Down Menu HTML select
+      https://www.javascripttutorial.net/javascript-dom/javascript-select-box/-->
+      <label id="bookslabel" for="favoriteList">Choose a listing:</label>
+
+      <select id="favoriteList" name="Favorites List">
+        <option value="select">--Select--</option>
+        <option id="books" value="books">Top 3 Favorite Books</option>
+        <option id="authors" value="authors">Top 3 Favorite Authors</option>
+      </select>
+
+      <div class="input">
+        <input type="submit" value="Display Listing" id="btnDisplayListing" onclick="clickFunction()"></input>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lower Card Start-->
+  <div class="cardResult">
+    <div class="containerResult">
+
+
+      <p id="result"></p>
+      <table id="booksTable"style=display:none>
+        <h2 id=h2B style=display:none>Top 3 Favorite Books</h2>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Pages</th>
+        </tr>
+        <tr>
+          <td>0261103571</td>
+          <td>The Fellowship of the ring</td>
+          <td>432</td>
+        </tr>
+        <tr>
+          <td>1514297272</td>
+          <td>The Two Towers</td>
+          <td>322</td>
+        </tr>
+        <tr>
+          <td>1514298139</td>
+          <td>The Return of The King</td>
+          <td>432</td>
+        </tr>
+      </table>
+
+      <table id="authorsTable" style=display:none>
+        <h2 id=h2A style=display:none>Top 3 Favorite Authors</h2>
+        <tr>
+          <th>Name</th>
+          <th>Genre</th>
+        </tr>
+        <tr>
+          <td>John Ronald Reuel Tolkien</td>
+          <td>Fantasy</td>
+        </tr>
+        <tr>
+          <td>Franklin Patrick Herbert Jr.</td>
+          <td>Science Fiction</td>
+        </tr>
+        <tr>
+          <td>Clive Staples Lewis</td>
+          <td>Fantasy, Science Fiction, Children's Literature</td>
+        </tr>
+      </table>
+<!-- https://www.youtube.com/watch?v=yEMQWyiEPFk -->
+      <script type="text/javascript">
+        function clickFunction() {
+          let sel = document.getElementById("favoriteList");
+          let selvalue = sel.options[sel.selectedIndex].value;
+
+          if (selvalue == "books") {
+            document.getElementById("booksTable").style.display='block';
+            document.getElementById("h2B").style.display='block';
+            document.getElementById("authorsTable").style.display='none';
+            document.getElementById("h2A").style.display='none';
+            return;
+          } else if (selvalue == "authors") {
+            document.getElementById("authorsTable").style.display='block';
+            document.getElementById("h2A").style.display='block';
+            document.getElementById("booksTable").style.display='none';
+            document.getElementById("h2B").style.display='none';
+            return;
+          } else if (selvalue == 'select') {
+            alert("Invalid Selection, Please Make Another Selection")
+          }
+        }
+      </script>
+    </div>
+  </div>
+  <!-- Return Home to Landing Page -->
+  <a id="returnConversion" class="return-home" href="https://justinlyost.github.io/Web-231/">Return</a>
+
+
+</body>
+
+</html>
