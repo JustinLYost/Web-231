@@ -198,6 +198,7 @@ table {
   margin-bottom: 30px;
   border-style: solid;
   width: 100%;
+
 }
 
 tr:hover {
@@ -205,12 +206,22 @@ tr:hover {
   color: #4F3674;
 }
 
+
 th {
   background: #4f3674;
   color: white;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 25%;
+}
+
+/* https://stackoverflow.com/questions/5179962/how-to-auto-resize-html-table-cell-to-fit-the-text-size */
+
+table td.shrink{
+  white-space: nowrap;
+}
+
+table td.expand{
+  width: 99%;
 }
 
 table, td, th {
@@ -260,4 +271,18 @@ table, td, th {
 #btnDisplayListing:hover {
   background-color: #D6A800;
   color: white;
+}
+
+/* Start of Javazon */
+
+#javash1{
+  background: none;
+  color: black;
+  border-style: none;
+}
+
+#javash2, #h2P, #h2S, #h2E{
+  background: none;
+  color: #4F3674;
+  border-style: none;
 }
